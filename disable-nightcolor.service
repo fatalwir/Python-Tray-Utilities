@@ -1,0 +1,11 @@
+[Unit]
+Description=Disable KDE Night Light at shutdown
+After=graphical.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStop=/usr/bin/kwriteconfig5 --file /home/%u/.config/kwinrc --group "NightColor" --key "Active" "false"
+
+[Install]
+WantedBy=default.target
