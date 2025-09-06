@@ -12,6 +12,6 @@ This utility toggles the *Night Light* mode by clicking the tray icon.
 ### disable-nightcolor.service
 Disables the *Night Light* mode for the next computer startup.
 
-1. Put into *~/.config/systemd/user/*.
+1. Put into *~/.config/systemd/user/*
 2. systemctl --user enable disable-nightcolor.service
 3. systemctl --user start disable-nightcolor.service
